@@ -58,9 +58,28 @@
         .peli{
             padding:15px;
         }
-        .textua{
+        .ongietorria{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .ongietorri-karta{
+            background-color: black;
+            border-radius: 10px;
+            text-align:center;
             font-family: cursive;
-            color:blueviolet;
+            font-size:large;
+            color:white; 
+            
+        }
+        .ongietorri-karta:hover{
+         
+            background-color:grey;
+        }
+        .ongietorri-karta a{
+            color:yellow;
         }
         a{
             text-decoration: none;
@@ -99,12 +118,24 @@
     <h1>Zinema Usurbil</h1>
    
     <main>
-        <div class="textua">
-    <marquee><p>Ongi etorri Zinema Usurbil webgunera!</p></marquee>
-    <marquee><p>Euskadiko zinemarik hoberena</p></marquee>
-    <marquee><p>Pelikula hoberenak eskeintzen dituen Zinema</p></marquee>
-    <marquee><p>Informazio gehiago jakin nahi badezu klikatu hemen: <a href="Informazioa3.html">Informazioa gehigarria</a></p></marquee>
+       <main>
+    <div class="ongietorria">
+        <div class="ongietorri-karta">
+            <p>Ongi etorri Zinema Usurbil webgunera!</p>
         </div>
+        <div class="ongietorri-karta">
+            <p>Euskadiko zinemarik hoberena</p>
+        </div>
+        <div class="ongietorri-karta">
+            <p>Pelikula hoberenak eskeintzen dituen Zinema</p>
+        </div>
+        <div class="ongietorri-karta">
+            <p>Informazio gehiago jakin nahi badezu klikatu hemen: 
+                <a href="Informazioa3.html">Informazioa gehigarria</a>
+            </p>
+        </div>
+    </div>
+</main>
     </main>
     <footer>
         <ul class="saresozialak">
