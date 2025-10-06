@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zinema Usurbil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Zinema Usurbil-eko kartelera">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 28px;
+            vertical-align: middle;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            border-bottom: 5px solid #f3d9d9;
+            background-color: #f3d9d9;
+        }
+
+        .logoa img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .hanburguesamenua,
+        .hanburguesamenuaitxi {
+            background-color: transparent;
+            border: none;
+            padding: 6px 8px;
+            cursor: pointer;
+        }
+
+        .nabigazioa {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        .menua {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menua li a {
+            text-decoration: none;
+            color: #222;
+            font-weight: 500;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-top: 5px solid #f3d9d9;
+            background-color: #f3d9d9;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .kontaktua {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        section {
+            margin: 30px 0;
+        }
+
+       
+
+        .pelikula figure {
+            width: 200px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .pelikula img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        section>div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 90px;
+            justify-content: flex-start;
+
+        }
+
+        .pelikula figcaption {
+            margin-top: 8px;
+            font-weight: normal;
+            font-size: 16px;
+            text-align: center;
+        }
+        .kartelera figure:hover {
+          transform: translateY(-5px);
+}   
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logoa"><img src="img/logozinema2.png" alt="logoa"></div>
+        <h1>Zinema Usurbil</h1>
+
+        <nav class="nabigazioa">
+            <div class="iconos">
+                <button class="hanburguesamenua" aria-label="Ireki menua">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <button class="hanburguesamenuaitxi" aria-label="Itxi menua">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+
+            <ul class="menua">
+                <li><a href="index2.html">Orrialde nagusia</a></li>
+                <li><a href="kartelera2.html">Kartelera</a></li>
+                <li><a href="balorazioak2.html">Balorazioak</a></li>
+                <li><a href="informazioa2.html">Informazioa</a></li>
+                <li><a href="#">Saskia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="kartelera">
+        <section>
+            <h2>Animaziozkoak</h2>
+            <div>
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/lilostitch2.jpg" alt="Lilo eta Stitch2">
+                        <figcaption>Lilo y Stitch</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/minecraftpelikula2.jpg" alt="Minecraftpelikula2">
+                        <figcaption>Una película de Minecraft</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/mufasa2.webp" alt="Mufasa: El rey león2">
+                        <figcaption>Mufasa: El rey león</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/entrenardragon2.jpg" alt="Como entrenar a tu dragon2">
+                        <figcaption>Cómo entrenar a tu dragón</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/sonic32.jpg" alt="Sonic 3: La película2">
+                        <figcaption>Sonic 3: La película</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Akziozkoak eta abenturazkoak/Superheroiak</h2>
+            <div>
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/capitan2.jpg" alt="Capitán América: Brave New World2">
+                        <figcaption>Capitán América: Brave New World</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/mision2.webp" alt="Misión: Imposible. Sentencia Final2">
+                        <figcaption>Misión: Imposible. Sentencia Final</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/thunderbolts2.jpg" alt="Thunderbolt2">
+                        <figcaption>Thunderbolt</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Komedia</h2>
+            <div>
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/padre2.jpg" alt="Padre no hay más que uno 52">
+                        <figcaption>Padre no hay más que uno 5</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/funeral2.jpg" alt="Un funeral de locos2">
+                        <figcaption>Un funeral de locos</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/casoplon2.jpg" alt="El casoplón2">
+                        <figcaption>El casoplón</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Drama</h2>
+            <div>
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/conclave2.jpg" alt="Conclave2">
+                        <figcaption>Conclave</figcaption>
+                    </figure>
+                </article>
+
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/sirat2.jpg_large" alt="Sirāt2">
+                        <figcaption>Sirāt</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Fantasia</h2>
+            <div>
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/blanca2.webp" alt="Blancanieves2">
+                        <figcaption>Blancanieves</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Dokumentala/Biografia</h2>
+            <div>
+                <article class="pelikula">
+                    <figure>
+                        <img src="img/wolfgang2.jpg" alt="Wolfgang (Extraordinario)2">
+                        <figcaption>Wolfgang (Extraordinario)</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logoa">
+            <a href="index2.html"><img src="img/logozinema2.png" alt="logoa2" width="50" height="50"></a>
+        </div>
+
+        <div>
+            <ul class="legala">
+                <li><a href="#">Ohar legala</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Creative Commons</a></li>
+            </ul>
+        </div>
+
+        <ul class="nabigazioafooter">
+            <li><a href="index2.html">Orrialde nagusia</a></li>
+            <li><a href="kartelera2.html">Kartelera</a></li>
+            <li><a href="balorazioak2.html">Balorazioak</a></li>
+            <li><a href="informazioa2.html">Informazioa</a></li>
+            <li><a href="Saskia2.html">Saskia</a></li>
+        </ul>
+
+        <div class="informazioa">
+            <address class="kontaktua">
+                <ul>
+                    <li><a href="http://instagram.com" target="_blank"><img src="img/instagram2.webp" alt="Instagram2"
+                                width="30" height="30"></a></li>
+                    <li><a href="mailto:ikpgarrastazu25@lhusurbil.eus"><img src="img/instagram2.webp" alt="Emaila2" width="30"
+                                height="30"></a></li>
+                    <li><a href="https://maps.app.goo.gl/U4ViMwwziz418LYK9" target="_blank"><img src="img/ubi2.png"
+                                alt="Direkzioa2" width="30" height="30"></a></li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
