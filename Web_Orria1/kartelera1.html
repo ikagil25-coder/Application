@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartelera 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f006f;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            color: white;
+        }
+
+        main ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        main ul li {
+            text-align: center;
+            flex: 0 0 30%;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 0 15px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin: 0 15px;
+            }
+
+            .hamburger span {
+                height: 3px;
+                width: 25px;
+                background: white;
+                margin: 4px 0;
+                border-radius: 2px;
+                transition: 0.4s;
+            }
+
+            .menu-toggle:checked~ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo1.png" alt="Logo" style="height: 100px;">
+        <h1>Kartelera</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="nav-list">
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Kartelera</h1>
+        <ul>
+            <li>
+                <img src="img/Lilo & Stitch.jpg" style="width: 300px; height: 500px;" alt="Lilo & Stitch">
+                <h2>Lilo & Stitch</h2>
+            </li>
+            <li>
+                <img src="img/Una pelicula de Minecraft.jpg" style="width: 300px; height: 500px;"
+                    alt="Una pelicula de Minecraft">
+                <h2>Una pelicula de Minecraft</h2>
+            </li>
+            <li>
+                <img src="img/Mufasa El Rey Leon.jpg" style="width: 300px; height: 500px;" alt="Mufasa: El Rey Leon">
+                <h2>Mufasa: El Rey Leon</h2>
+            </li>
+            <li>
+                <img src="img/Como entrenar a tu dragon.jpg" style="width: 300px; height: 500px;"
+                    alt="Como entrenar a tu dragon">
+                <h2>Como entrenar a tu dragon</h2>
+            </li>
+            <li>
+                <img src="img/Capitan America Brave New World.jpg" style="width: 300px; height: 500px;"
+                    alt="Capitan America Brave New World">
+                <h2>Capitan America Brave New World</h2>
+            </li>
+            <li>
+                <img src="img/Conclave.jpg" style="width: 300px; height: 500px;" alt="Conclave">
+                <h2>Conclave</h2>
+            </li>
+            <li>
+                <img src="img/Sonic 3 La Pelicula.jpg" style="width: 300px; height: 500px;" alt="Sonic 3 La Pelicula">
+                <h2>Sonic 3 La Pelicula</h2>
+            </li>
+            <li>
+                <img src="img/Mision Imposible Sentencia Final.jpg" style="width: 300px; height: 500px;"
+                    alt="Mision Imposible Sentencia Final">
+                <h2>Mision Imposible Sentencia Final</h2>
+            </li>
+            <li>
+                <img src="img/Blancanieves.jpg" style="width: 300px; height: 500px;" alt="Blancanieves">
+                <h2>Blancanieves</h2>
+            </li>
+            <li>
+                <img src="img/Thunderbolt.jpg" style="width: 300px; height: 500px;" alt="Thunderbolt">
+                <h2>Thunderbolt</h2>
+            </li>
+            <li>
+                <img src="img/Padre no hay mas que uno 5.jpg" style="width: 300px; height: 500px;"
+                    alt="Padre no hay mas que uno 5">
+                <h2>Padre no hay mas que uno 5</h2>
+            </li>
+            <li>
+                <img src="img/Wolfgang (Extraordinario).jpg" style="width: 300px; height: 500px;"
+                    alt="Wolfgang (Extraordinario)">
+                <h2>Wolfgang (Extraordinario)</h2>
+            </li>
+            <li>
+                <img src="img/El casoplon.jpg" style="width: 300px; height: 500px;" alt="El casoplon">
+                <h2>El casoplon</h2>
+            </li>
+            <li>
+                <img src="img/Un funeral de locos.jpg" style="width: 300px; height: 500px;" alt="Un funeral de locos">
+                <h2>Un funeral de locos</h2>
+            </li>
+            <li>
+                <img src="img/Sirat.jpg" style="width: 300px; height: 500px;" alt="Sirat">
+                <h2>Sirat</h2>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <img src="img/Logo1.png" style="width: 50px; height: auto;" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Zine Usurbil. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

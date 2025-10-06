@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilo & Stitch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f006f;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .edukia {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h1 {
+            margin: 10px 0;
+        }
+
+        h2 {
+            margin-top: 15px;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 0 15px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin: 0 15px;
+            }
+
+            .hamburger span {
+                height: 3px;
+                width: 25px;
+                background: white;
+                margin: 4px 0;
+                border-radius: 2px;
+                transition: 0.4s;
+            }
+
+            .menu-toggle:checked~ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="goiburua">
+        <img src="img/Logo1.png" alt="Logo" style="height: 100px;">
+        <h1>Pelicula</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="nav-list">
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="edukia">
+        <h1>Lilo & Stitch</h1>
+        <img src="img/Lilo & Stitch.jpg" alt="Lilo & Stitch pelikularen kartela" style="width: 300px; height: 500px;">
+        <p>
+        <button style="margin-top: 15px; padding: 10px 20px; font-size: 16px; cursor: pointer;"
+            onclick="window.location.href='saskia1.html'">Erosi sarrerak</button>
+    </main>
+
+    <footer class="oin-oharra">
+        <img src="img/Logo1.png" style="width: 50px; height: auto;" alt="Logoa">
+        <nav>
+            <ul>
+                <li><a href="index.html">Hasiera</a></li>
+                <li><a href="kartelera.html">Kartelera</a></li>
+                <li><a href="informazioa.html">Informazioa</a></li>
+                <li><a href="balorazioak.html">Balorazioak</a></li>
+                <li><a href="saskia.html">Saskia</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Usurbil Zinea. Eskubide guztiak erreserbatuta.</p>
+    </footer>
+</body>
+
+</html>
