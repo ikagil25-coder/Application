@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class Main1 {
     static Scanner sc = new Scanner(System.in);
 
     static String[] gelak = {
