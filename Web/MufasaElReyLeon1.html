@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index 1</title>
+    <title>Mufasa: El rey leon</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #0f006f;
+            color: white;
         }
 
         header {
@@ -35,22 +36,9 @@
             text-decoration: none;
         }
 
-        main {
+        .edukia {
             padding: 20px;
-            color: white;
-        }
-
-        main ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        main ul li {
             text-align: center;
-            flex: 0 0 30%;
         }
 
         footer {
@@ -63,11 +51,11 @@
         }
 
         h1 {
-            margin: 0;
+            margin: 10px 0;
         }
 
         h2 {
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         img {
@@ -130,9 +118,9 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/Logo1.png" style="width: 100px; height: auto;" alt="Logo">
-        <h1>Zine Usurbil</h1>
+    <header class="goiburua">
+        <img src="img/Logo1.png" alt="Logo" style="height: 100px;">
+        <h1>Pelikula</h1>
         <nav>
             <input type="checkbox" id="menu-toggle" class="menu-toggle" />
             <label for="menu-toggle" class="hamburger">
@@ -149,26 +137,17 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Gehien ikusi diren pelikulak</h1>
-        <ul>
-            <li>
-                <img src="img/Lilo & Stitch.jpg" style="width: 300px; height: 500px;" alt="Lilo & Stitch">
-                <h2>Lilo & Stitch</h2>
-            </li>
-            <li>
-                <img src="img/Una pelicula de Minecraft.jpg" style="width: 300px; height: 500px;"
-                    alt="Una pelicula de Minecraft">
-                <h2>Una pelicula de Minecraft</h2>
-            </li>
-            <li>
-                <img src="img/Mufasa El Rey Leon.jpg" style="width: 300px; height: 500px;" alt="Mufasa: El Rey Leon">
-                <h2>Mufasa: El Rey Leon</h2>
-            </li>
-        </ul>
+
+    <main class="edukia">
+        <h1>Mufasa: El rey leon</h1>
+        <img src="img/Mufasa El Rey Leon.jpg" style="width: 300px; height: 500px;">
+        <p>
+        <button style="margin-top: 15px; padding: 10px 20px; font-size: 16px; cursor: pointer;"
+            onclick="window.location.href='saskia1.html'">Erosi sarrerak</button>
     </main>
-    <footer>
-        <img src="img/Logo1.png" style="width: 50px; height: auto;" alt="Logo">
+
+    <footer class="oin-oharra">
+        <img src="img/Logo1.png" style="width: 50px; height: auto;" alt="Logoa">
         <nav>
             <ul>
                 <li><a href="index1.html">Hasiera</a></li>
@@ -178,7 +157,7 @@
                 <li><a href="saskia1.html">Saskia</a></li>
             </ul>
         </nav>
-        <p>&copy; 2024 Zine Usurbil. All rights reserved.</p>
+        <p>&copy; 2024 Usurbil Zinea. Eskubide guztiak erreserbatuta.</p>
     </footer>
 </body>
 
