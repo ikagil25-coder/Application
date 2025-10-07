@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) throws Exception {
         Scanner irakur_var = new Scanner(System.in);
         System.out.println("Aukeratu hurrengo aukeren artean bat dagokion zenbakia jarriz: \n1.Asteguna \n2.Pelikulen informazio orokorra \n3.Kokapena ikusi \n4.Irekiera ordutegia ikusi");
