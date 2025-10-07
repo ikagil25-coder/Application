@@ -3,6 +3,10 @@ import java.util.*;
 public class Main1 {
     static Scanner sc = new Scanner(System.in);
 
+    static String agurra() {
+        return "Kaixo eta ongietorri Zine Usurbilera!";
+    }
+    
     static String[] gelak = {
             "Umeen gela", "Superheroien gela", "Thriller gela",
             "Zientzia fikzioko gela", "Komedia gela"
@@ -157,6 +161,7 @@ public class Main1 {
     }
 
     public static void main(String[] args) {
+        System.out.println(agurra());
         kargatuProgramazioa();
         kargatuSarrerak();
 
