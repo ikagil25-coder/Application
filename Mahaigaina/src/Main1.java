@@ -1,3 +1,14 @@
+/*
+ * Funtzionamentua:
+ * - Hasieran agurra erakusten du.
+ * - Menu nagusia erakusten du, non erabiltzaileak aukera dezake aste eguna aukeratu,
+ *   pelikulen informazio orokorra ikusi, kokapena ikusi, irekiera ordutegia ikusi edo irten.
+ * - Aste eguna aukeratzean, egun horretako pelikulen zerrenda erakusten du eta sarrera erosteko aukera ematen du.
+ * - Pelikulen informazio orokorra aukeratzean, pelikula guztiak zerrendatzen ditu.
+ * - Kokapena eta irekiera ordutegia aukerak informazio estatikoa erakusten dute.
+ * - Irten aukerak programatik irteteko aukera ematen du.
+ */
+
 import java.util.*;
 
 public class Main1 {
