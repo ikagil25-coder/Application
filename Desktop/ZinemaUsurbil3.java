@@ -5,7 +5,7 @@ import java.util.Scanner;
 class Main3{
     public static void main(String [] args) {
         Scanner sc = new Scanner(System.in);
-
+        //hasiera
         System.out.println("Kaixo!!. Ongi etorri Zinema Usurbil aplikaziora.");
         System.out.println("Aukeratu hauetako opzio bat:");
         System.out.println("1. Aste eguna");
@@ -45,164 +45,129 @@ class Main3{
         aretoa.add("5. Komedia aretoa");
         aretoa.add("6. Atzera");
 
-       //lehen menua     
-        if (zinema == 1) {
-            System.out.println("Aukeratu aste eguna:");
-            for (String eguna : egunak) {
-            System.out.println(eguna);
-            }
-        }
-        if(zinema == 2){
-            System.out.println("Aukeratu pelikula bat(info)");
-            for(String pelikula : pelikulak){
-                System.out.println(pelikula);
-            }
-        }
-        else if(zinema == 3){
-            System.out.println("Kokapena");
-        }
-        else if(zinema == 4){
-            System.out.println("Ordutegia");
-        }
-        else if(zinema == 5){
-            //programa bukatu
-        }
+       //lehen menua
+       switch(zinema){
+        case 1:
+        System.out.println(egunak);
+        break;
+        case 2:
+        System.out.println("Pelikulen informazio orokorra");
+        break;
+        case 3:
+        System.out.println("Kokapena");
+        break;
+        case 4:
+        System.out.println("Irekiera ordutegia");
+        break;
+        case 5:
+        break;
+       }    
+       
+       //Eguneko menua
         int aukeguna = sc.nextInt ();
-            
-        //Eguneko menua
-        if(aukeguna == 1){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto: aretoa){
-                System.out.println(areto);
-            }
+        switch(aukeguna){
+            case 1:
+            System.out.println(aretoa);
+            break;
+            case 2:
+            System.out.println(aretoa);
+            break;
+            case 3:
+            System.out.println(aretoa);
+            break;
+            case 4:
+            System.out.println(aretoa);
+            break;
+            case 5:
+            System.out.println(aretoa);
+            break;
+            case 6:
+            System.out.println(aretoa);
+            break;
+            case 7:
+            System.out.println(aretoa);
+            break;
+            case 8:
+            break;
         }
-        else if(aukeguna == 2){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto: aretoa){
-                System.out.println(areto);
-            }
-        }
-        else if(aukeguna == 3){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto: aretoa){
-                System.out.println(areto);
-            }
-        }
-        else if(aukeguna == 4){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto: aretoa){
-                System.out.println(areto);
-            }
-        }
-        else if(aukeguna == 5){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto3: aretoa){
-                System.out.println(areto3);
-            }
-        }
-        else if(aukeguna == 6){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto: aretoa){
-                System.out.println(areto);
-            }
-        }
-        else if(aukeguna == 7){
-            System.out.println("Aukeratu areto bat: ");
-            for(String areto: aretoa){
-                System.out.println(areto);
-            }
-        }
-        else if(aukeguna == 8){
-                //atzera
-            }
-        else if(aukeguna == 8){
-            //atzera
-        }
-        int aukareto=sc.nextInt();
 
         //aretoko menua
-        if(aukareto == 1){
-            System.out.println("Aukeratu pelikula bat: ");
-            for(String pelikula: pelikulak){
-                System.out.println(pelikula);
-            }
-
+        int aukareto=sc.nextInt();
+        switch(aukareto){
+            case 1:
+              System.out.println(pelikulak);
+              break;
+            case 2:
+              System.out.println(pelikulak);
+              break;
+              case 3:
+              System.out.println(pelikulak);
+              break;
+            case 4:
+              System.out.println(pelikulak);
+              break;
+              case 5:
+              System.out.println(pelikulak);
+              break;
+            case 6:
+              break;
         }
-         else if(aukareto == 2){
-            System.out.println("Aukeratu pelikula bat: ");
-            for(String pelikula: pelikulak){
-                System.out.println(pelikula);
-            }
-
-        }
-        else if(aukareto == 3){
-            System.out.println("Aukeratu pelikula bat: ");
-            for(String pelikula: pelikulak){
-                System.out.println(pelikula);
-            }
-
-        }
-        else if(aukareto == 4){
-            System.out.println("Aukeratu pelikula bat: ");
-            for(String pelikula: pelikulak){
-                System.out.println(pelikula);
-            }
-
-        }
-        else if(aukareto == 5){
-            System.out.println("Aukeratu pelikula bat: ");
-            for(String pelikula: pelikulak){
-                System.out.println(pelikula);
-            }
-
-        }
-        else if(aukareto == 6){
-            //atzera
-            }
+       
+        //pelikula menua
             int aukpelikula=sc.nextInt();
-
-            //pelikula menua
-            if(aukpelikula == 1){
+            switch(aukpelikula){
+                case 1:
                 System.out.println("Sarrerak erosi nahi dituzu?(1. BAI/2. EZ)");
-
-            }
-            else if(aukpelikula == 2){
+                break;
+                case 2:
                 System.out.println("Sarrerak erosi nahi dituzu?(1. BAI/2. EZ)");
-                
-            }
-            else if(aukpelikula ==3){
+                break;
+                case 3:
                 System.out.println("Sarrerak erosi nahi dituzu?(1. BAI/2. EZ)");
-                
-            }
-            else if(aukpelikula == 4){
+                break;
+                case 4:
                 System.out.println("Sarrerak erosi nahi dituzu?(1. BAI/2. EZ)");
-                
-            }
-            else if(aukpelikula == 5){
+                break;
+                case 5:
                 System.out.println("Sarrerak erosi nahi dituzu?(1. BAI/2. EZ)");
-                
+                break;
             }
-            int sarrerak =sc.nextInt();
-
+            
             //Sarrerak menua
-            if(sarrerak == 1){
-                System.out.println("Zenbat sarrera nahi dituzu?(1-4)");
+            int sarrerak =sc.nextInt();
+            switch(sarrerak){
+                case 1:
+                 System.out.println("Zenbat sarrera nahi dituzu?(1-4)");
+                 break;
+                 case 2:
+                 break;
             }
-            else if(sarrerak == 2){
-                //atzera
-            }
+            //sarrerak erosi
             int sarrerakop=sc.nextInt();
-            if(sarrerakop == 1){
-                System.out.println("Eskerrik asko sarrera "+sarrerakop+" erosi duzu");
-                System.out.println(4-sarrerakop+" sarrera gehiago erosi ditzazkezu");
-            }
-            else if(sarrerakop>=2 || sarrerakop<=4){
-                System.out.println("Eskerrik asko "+sarrerakop+" sarrera erosi dituzu");
-                System.out.println(4-sarrerakop+" sarrera gehiago erosi ditzazkezu");
-            }
-            else if(sarrerakop>4){
+             if(sarrerakop > 4){
                 System.out.println("Ezin dituzu 4 sarrera baino gehiago erosi");
             }
+            switch(sarrerakop){
+                case 1:
+                 System.out.println("Eskerrik asko sarrera 1 erosi duzu");
+                 System.out.println("3 sarrera gehiago erosi ditzazkezu");
+                 break;
+                 case 2:
+                  System.out.println("Eskerrik asko 2 sarrera erosi dituzu");
+                  System.out.println("2 sarrera gehiago erosi ditzazkezu");
+                  break;
+                  case 3:
+                  System.out.println("Eskerrik asko 3 sarrera erosi dituzu");
+                  System.out.println("Sarrera 1 gehiago erosi dezakezu");
+                  break;
+                  case 4:
+                  System.out.println("Eskerrik asko 4 sarrera erosi dituzu");
+                  System.out.println("Ezin dituzu sarrera gehiago erosi");
+                  break;
+                  case 5:
+                  break;
+            }
+            sc.close();
             }
         }
     
