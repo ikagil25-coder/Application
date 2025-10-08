@@ -41,17 +41,15 @@ public class Main2 {
         boolean running = true;
         while (running) {
             // Menu nagusia
-            System.out.println("\nAukeratu hurrengo aukeren artean bat dagokion zenbakia jarriz: ");
-            System.out.println("1.Asteguna");
-            System.out.println("2.Pelikulen informazio orokorra");
-            System.out.println("3.Kokapena ikusi");
-            System.out.println("4.Irekiera ordutegia ikusi");
-            System.out.println("5.Irten");
+            System.out.println(
+                    "\nAukeratu hurrengo aukeren artean bat dagokion zenbakia jarriz: \n 1.Asteguna \n 2.Pelikulen informazio orokorra \n 3.Kokapena ikusi \n 4.Irekiera ordutegia ikusi \n 5.Irten");
+
             int aukera = irakur_var.nextInt();
 
-            //Asteguna aukeratzen badu
+            // Asteguna aukeratzen badu
             if (aukera == 1) {
-                System.out.println("Sartu asteko egun bat zenbaki moduan \n 1. Astelehena \n 2. Asteartea \n 3. Asteazkena \n 4. Osteguna \n 5. Ostirala \n 6. Larunbata \n 7. Igandea");
+                System.out.println(
+                        "Sartu asteko egun bat zenbaki moduan \n 1. Astelehena \n 2. Asteartea \n 3. Asteazkena \n 4. Osteguna \n 5. Ostirala \n 6. Larunbata \n 7. Igandea");
                 int egunaAukera = irakur_var.nextInt();
                 if (egunaAukera == 1) {
                     System.out.println("Astelehenean dauden pelikulak hauek dira: bat aukeratu" +
@@ -103,12 +101,14 @@ public class Main2 {
                 continue; // berriro menu nagusira
             }
 
-            //Zineko informazio orokorra aukeratzen badu
+            // Zineko informazio orokorra aukeratzen badu
             if (aukera == 2) {
-                System.out.println("Aukeratu bat bi hauetatik: \n1.Pelikula kopurua eta hauen izenak \n2.Gela kopurua eta hauen izenak");
+                System.out.println(
+                        "Aukeratu bat bi hauetatik: \n1.Pelikula kopurua eta hauen izenak \n2.Gela kopurua eta hauen izenak");
                 int informazioaukera = irakur_var.nextInt();
                 if (informazioaukera == 1) {
-                    System.out.println("Gaur egun zinean dauden pelikulak " + pelikula.size() + " dira eta hauek dira: " + pelikula);
+                    System.out.println("Gaur egun zinean dauden pelikulak " + pelikula.size() + " dira eta hauek dira: "
+                            + pelikula);
                 } else if (informazioaukera == 2) {
                     System.out.println("Zineak " + gela.size() + " gela ditu eta hauek dira: " + gela);
                 } else {
@@ -116,14 +116,15 @@ public class Main2 {
                 }
                 continue;
             }
-            //kokapena
+            // kokapena
             if (aukera == 3) {
                 System.out.println(" Zinearen direkzioa hau da: Bo. Txiki-Erdi, 7, 20170 Usurbil, Gipuzkoa");
                 continue;
             }
-            //Irekiera ordutegia
+            // Irekiera ordutegia
             if (aukera == 4) {
-                System.out.println("Zinea astelehenetik ostiralera 16:00etatik 22:00etara dago irekita eta larunbat eta igandeetan 15:00etatik 23:00etara.");
+                System.out.println(
+                        "Zinea astelehenetik ostiralera 16:00etatik 22:00etara dago irekita eta larunbat eta igandeetan 15:00etatik 23:00etara.");
                 continue;
             }
             if (aukera == 5) {
