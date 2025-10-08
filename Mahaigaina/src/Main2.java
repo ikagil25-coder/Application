@@ -2,6 +2,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main2 {
+    static String agurra(){
+        return "Ongi etorri zine aretora!";
+    }
     public static void main(String[] args) {
         Scanner irakur_var = new Scanner(System.in);
 
