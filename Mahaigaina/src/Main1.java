@@ -13,11 +13,31 @@ import java.util.*;
 
 public class Main1 {
     static Scanner sc = new Scanner(System.in);
-
+/*
+ * Agurra funtzioa: Programaren hasieran agurra itzultzen du.
+ * @return Agurra string moduan.
+ */
     static String agurra() {
         return "Kaixo eta ongietorri Zine Usurbilera!";
     }
     
+    /*
+     * Gelak eta pelikulak definitzen dira.
+     * gelak: Gelak izeneko array bat, gelako izenak dituena.
+     * pelikulak: Pelikulak izeneko array bat, pelikulen izenak dituena.
+     * Egunak: Egunak izeneko array bat, asteko egunak dituena.
+     * programazioa: Egunen lista eta pelikulen lista duen ArrayList bat.
+     * sarrerak: Egunen lista eta gelako sarrerak duen ArrayList bat.
+     * kargatuProgramazioa funtzioa: Programazioa kargatzen du.
+     * kargatuSarrerak funtzioa: Sarrerak hasieratzen ditu.
+     * erakutsiPelikulak funtzioa: Pelikula guztiak erakusten ditu.
+     * menuEguna funtzioa: Egun bat aukeratzen du eta egun horretako pelikulen zerrenda erakusten du.
+     */
+
+
+     /*
+      * Gelak eta pelikulak definitzen dira.
+      */
     static String[] gelak = {
             "Umeen gela", "Superheroien gela", "Thriller gela",
             "Zientzia fikzioko gela", "Komedia gela"
@@ -31,11 +51,19 @@ public class Main1 {
             "Wolfgang (Extraordinario)", "El casoplón", "Un funeral de locos", "Sirāt"
     };
 
-    // Egunak
+    /*
+     * Egunak definitzen dira.
+     */
     static String[] egunak = {
             "Astelehena", "Asteartea", "Asteazkena",
             "Osteguna", "Ostirala", "Larunbata", "Igandea"
     };
+
+    /*
+     * Programazioa eta sarrerak definitzen dira.
+     * programazioa: Egunen lista eta pelikulen lista duen ArrayList bat.
+     * sarrerak: Egunen lista eta gelako sarrerak duen ArrayList
+     */
 
     // Programazioa: Egunen lista → pelikulen lista
     static ArrayList<ArrayList<String>> programazioa = new ArrayList<>();
@@ -43,7 +71,12 @@ public class Main1 {
     // Sarrerak: Egunen lista → gelako sarrerak
     static ArrayList<ArrayList<Integer>> sarrerak = new ArrayList<>();
 
-    // Programazioa kargatu
+    /*
+     * kargatuProgramazioa funtzioa: Programazioa kargatzen du.
+     * Egun bakoitzerako pelikula zerrenda bat sortzen du.
+     * Pelikula zerrenda bakoitza ArrayList batean gordetzen da.
+     * Egun bakoitzeko pelikula zerrenda programazioa ArrayList-ean gehitzen da.
+     */
     static void kargatuProgramazioa() {
         // Astelehena
         programazioa.add(new ArrayList<>(List.of(
@@ -96,6 +129,11 @@ public class Main1 {
                 "Un funeral de locos")));
     }
 
+    /* Sarrerak kargatu 
+     * Egun bakoitzerako sarrera kopuru bat sortzen du.
+     * Hasieran sarrera kopurua 0 da.
+    */
+
     // Sarrerak kargatu
     static void kargatuSarrerak() {
         for (int i = 0; i < programazioa.size(); i++) {
@@ -107,12 +145,25 @@ public class Main1 {
         }
     }
 
+/*
+ * erakutsiPelikulak funtzioa: Pelikula guztiak erakusten ditu.
+ * Pelikula bakoitza zenbakiarekin zerrendatzen da.
+ */
+
     static void erakutsiPelikulak() {
         System.out.println("\nPelikula guztiak:");
         for (int i = 0; i < pelikulak.length; i++) {
             System.out.println((i + 1) + ". " + pelikulak[i]);
         }
     }
+
+/*
+ * menuEguna funtzioa: Egun bat aukeratzen du eta egun horretako pelikulen zerrenda erakusten du.
+ * Erabiltzaileak pelikula bat aukeratu eta sarrera erosi dezake.
+ * Egun bakoitzeko pelikula zerrenda programazioa ArrayList-ean gordetzen da.
+ * Sarrera kopurua sarrerak ArrayList-ean gordetzen da.
+ * Egun bakoitzeko pelikulen sarrera kopurua gehienez 4 izan daiteke.
+ */
 
     static void menuEguna() {
         for (int i = 0; i < egunak.length; i++) {
@@ -154,6 +205,14 @@ public class Main1 {
         }
     }
 
+/*
+ * erosiSarrera funtzioa: Sarrera erosteko erabiltzen da.
+ * Egunaren eta pelikularen indizeak, pelikula izena eta sarrera kopurua jasotzen ditu.
+ * Sarrera kopurua 1 eta 4 artean egon behar da.
+ * Egun horretarako sarrera kopurua gehienez 4 izan daiteke.
+ * Sarrera erosi ondoren, eguneratu egiten da sarrerak ArrayList-ean.
+ */
+
     static void erosiSarrera(int egunaIdx, int peliIdx, String pelikula, int kop) {
         if (kop < 1 || kop > 4) {
             System.out.println("Sarrera kopuru okerra (1-4).");
@@ -170,6 +229,13 @@ public class Main1 {
                     "Gehienez " + (4 - lehendik) + " erosi ditzakezu egun horretarako.");
         }
     }
+
+/*
+ * main funtzioa: Programaren sarrera puntua.
+ * Agurra erakusten du, programazioa eta sarrerak kargatzen ditu.
+ * Menu nagusia erakusten du eta erabiltzailearen aukerak prozesatzen ditu.
+ * Erabiltzaileak irten arte menu nagusia erakusten jarraitzen du.
+ */
 
     public static void main(String[] args) {
         System.out.println(agurra());
