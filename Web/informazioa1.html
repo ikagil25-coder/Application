@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informazioa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f006f;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            color: white;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+
+        h1,
+        h2 {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 8px;
+        }
+
+        .info-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .mapa {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 0 15px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .menu-toggle:checked~ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo1.png" style="width: 100px; height: auto;" alt="Logo">
+        <h1>Zine Usurbil</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="nav-list">
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Informazioa</h1>
+
+        <div class="info-section">
+            <h2>Nor gara?</h2>
+            <p>Zine Usurbil Usurbilgo zinema da, film berrienak eta klasiko onenak eskaintzen dituena.
+                Gure helburua da zinemaren magia zure herrira ekartzea eta ikus-entzunezko kulturaren inguruan
+                komunitate bat sortzea.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Kokapena</h2>
+            <p>📍 <strong>Helbidea:</strong> Kale Nagusia 25, 20170 Usurbil (Gipuzkoa)</p>
+            <iframe class="mapa" src="https://www.google.com/maps?q=Usurbil&output=embed"></iframe>
+        </div>
+
+        <div class="info-section">
+            <h2>Ordutegia</h2>
+            <p>
+                Astelehenetik ostiralera: 17:00 - 22:30<br>
+                Larunbat eta igandeetan: 16:00 - 00:00
+            </p>
+        </div>
+
+        <div class="info-section">
+            <h2>Harremanetarako</h2>
+            <p>Telefonoa: 943 123 456<br>
+                Emaila: <a href="mailto:info@zineusurbil.eus" style="color: #9dc1ff;">info@zineusurbil.eus</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/Logo1.png" style="width: 50px; height: auto;" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Zine Usurbil. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
