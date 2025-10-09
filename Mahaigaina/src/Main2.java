@@ -5,6 +5,12 @@ public class Main2 {
     static String agurra(){
         return "Ongi etorri zine aretora!";
     }
+    /**
+     * Mahaiaineko aplikazio honetan scanner bat erabiliko dugu erabiltzailearen sarrerak jasotzeko. Sarrera hauek
+     * erabiliko ditugu zinearen menu nagusian zehar nabigatzeko eta aukeratutako pelikulak ikusteko sarrerak erosteko.
+     * Pelikula bakoitzeko gehienez 4 sarrera erosi ahal izango dira
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner irakur_var = new Scanner(System.in);
 
