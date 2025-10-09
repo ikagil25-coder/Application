@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balorazioa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f006f;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        main ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        main ul li {
+            text-align: center;
+            flex: 0 0 30%;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            margin: 0 15px;
+        }
+
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: white;
+            margin: 4px 0;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                margin: 0 15px;
+            }
+
+            .hamburger span {
+                height: 3px;
+                width: 25px;
+                background: white;
+                margin: 4px 0;
+                border-radius: 2px;
+                transition: 0.4s;
+            }
+
+            .menu-toggle:checked~ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo1.png" alt="Logo" style="height: 100px;">
+        <h1>Balorazioak</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="nav-list">
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Pelikula baloratu</h2>
+        <form>
+            <label for="pelikula">Pelikula aukeratu:</label>
+            <select id="pelikula" name="pelikula" required>
+                <option value="">Aukeratu...</option>
+                <option value="Lilo & Stitch">Lilo & Stitch</option>
+                <option value="Una pelicula de Minecraft">Una pelicula de Minecraft</option>
+                <option value="Mufasa El Rey Leon">Mufasa: El Rey Leon</option>
+                <option value="Como entrenar a tu dragon">Como entrenar a tu dragon</option>
+                <option value="Capitan America Brave New World">Capitan America Brave New World</option>
+                <option value="Conclave">Conclave</option>
+                <option value="Sonic 3 La Pelicula">Sonic 3 La Pelicula</option>
+                <option value="Mision Imposible Sentencia Final">Mision Imposible Sentencia Final</option>
+                <option value="Blancanieves">Blancanieves</option>
+                <option value="Thunderbolt">Thunderbolt</option>
+                <option value="Padre no hay mas que uno 5">Padre no hay mas que uno 5</option>
+                <option value="Wolfgang (Extraordinario)">Wolfgang (Extraordinario)</option>
+                <option value="El casoplon">El casoplon</option>
+                <option value="Un funeral de locos">Un funeral de locos</option>
+                <option value="Sirat">Sirat</option>
+            </select>
+            <br><br>
+            <label for="balorazioa">Balorazioa (1-5):</label>
+            <input type="number" id="balorazioa" name="balorazioa" min="1" max="5" required>
+            <br><br>
+            <label for="zergatia">Zure zergatia:</label>
+            <textarea id="zergatia" name="zergatia" rows="4" cols="40" required></textarea>
+            <br><br>
+            <button type="submit">Bidali</button>
+        </form>
+    </main>
+    <footer>
+        <img src="img/Logo1.png" alt="Zure Zinema Logo" style="height: 50px;">
+        <nav>
+            <ul>
+                <li><a href="index1.html">Hasiera</a></li>
+                <li><a href="kartelera1.html">Kartelera</a></li>
+                <li><a href="informazioa1.html">Informazioa</a></li>
+                <li><a href="balorazioak1.html">Balorazioak</a></li>
+                <li><a href="saskia1.html">Saskia</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Zure Zinema</p>
+    </footer>
+</body>
+
+</html>

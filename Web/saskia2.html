@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <title>Zinema Usurbil — Saskia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <style>
+    html, body {
+      margin:0; padding:0;
+      height:100%;
+    }
+    body {
+      display:flex;
+      flex-direction:column;
+      font-family:sans-serif;
+      background:#fafafa;
+      color:#222;
+    }
+
+    header, footer {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:10px 14px; background:#f3d9d9;
+    }
+    header { border-bottom:5px solid #f3d9d9; }
+    footer { border-top:5px solid #f3d9d9; flex-wrap:wrap; gap:10px; }
+
+    .logoa img { width:50px; height:50px; }
+    .menua { list-style:none; display:flex; gap:12px; margin:0; padding:0; }
+    .menua a, .nabigazioafooter a, .legala a { text-decoration:none; color:#222; }
+
+    main {
+      flex:1; 
+      max-width:600px; margin:24px auto; padding:16px;
+      background:#fff; border-radius:8px;
+    }
+
+    .saskia form { display:flex; flex-direction:column; gap:12px; }
+    select, input, button {
+      padding:8px; border:1px solid #ccc; border-radius:6px;
+    }
+    button {
+      background:#222; color:#fff; cursor:pointer; border:none;
+    }
+    button:hover { background:#444; }
+
+    footer ul { list-style:none; margin:0; padding:0; display:flex; gap:12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logoa"><img src="img/logozinema2.png" alt="logoa"></div>
+    <h1 style="font-size:20px; margin:0;">Zinema Usurbil</h1>
+    <nav>
+      <ul class="menua">
+        <li><a href="index2.html">Orrialde nagusia</a></li>
+        <li><a href="kartelera2.html">Kartelera</a></li>
+        <li><a href="balorazioak2.html">Balorazioak</a></li>
+        <li><a href="informazioa2.html">Informazioa</a></li>
+        <li><a href="saskia2.html">Saskia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="saskia">
+      <h2>Zure Saskia</h2>
+      <form>
+        <label for="pelikula">Aukeratu pelikula:</label>
+        <select id="pelikula" name="pelikula">
+          <option value="">-- Aukeratu --</option>
+          <option>Lilo y Stitch</option>
+          <option>Minecraft</option>
+          <option>Mufasa: El rey león</option>
+          <option>Cómo entrenar a tu dragón</option>
+          <option>Sonic 3: La película</option>
+          <option>Capitán América</option>
+          <option>Misión Imposible</option>
+          <option>Thunderbolt</option>
+          <option>Padre no hay más que uno 5</option>
+          <option>El casoplón</option>
+          <option>Un funeral de locos</option>
+          <option>Conclave</option>
+          <option>Sirāt</option>
+          <option>Blancanieves</option>
+          <option>Wolfgang (Extraordinario)</option>
+        </select>
+
+        <label for="kopurua">Kopurua:</label>
+        <input type="number" id="kopurua" name="kopurua" min="1" value="1">
+
+        <button type="submit">Erosi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logoa">
+      <a href="index2.html"><img src="img/logozinema2.png" alt="logoa" width="50" height="50"></a>
+    </div>
+    <ul class="legala">
+      <li><a href="#">Ohar legala</a></li>
+      <li><a href="#">Cookies</a></li>
+      <li><a href="#">Creative Commons</a></li>
+    </ul>
+    <ul class="nabigazioafooter">
+      <li><a href="index2.html">Orrialde nagusia</a></li>
+      <li><a href="kartelera2.html">Kartelera</a></li>
+      <li><a href="balorazioak2.html">Balorazioak</a></li>
+      <li><a href="informazioa2.html">Informazioa</a></li>
+      <li><a href="saskia2.html">Saskia</a></li>
+    </ul>
+    <address class="kontaktua">
+      <ul>
+        <li><a href="http://instagram.com"><img src="img/instagram2.webp" alt="Instagram" width="30"></a></li>
+        <li><a href="mailto:ikpgarrastazu25@lhusurbil.eus"><img src="img/mail2.png" alt="Email" width="30"></a></li>
+        <li><a href="https://maps.app.goo.gl/U4ViMwwziz418LYK9"><img src="img/ubi2.png" alt="Mapa" width="30"></a></li>
+      </ul>
+    </address>
+  </footer>
+</body>
+</html>

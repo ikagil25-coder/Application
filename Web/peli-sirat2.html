@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="utf-8">
+  <title>Sirāt — Zinema Usurbil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: sans-serif; color:#222; background:#fafafa; }
+    a { color: inherit; }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 28px;
+      vertical-align: middle;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border-bottom: 5px solid #f3d9d9;
+      background-color: #f3d9d9;
+    }
+    .logoa img { width:50px; height:50px; }
+    .hanburguesamenua,
+    .hanburguesamenuaitxi {
+      background-color: transparent;
+      border: none;
+      padding: 6px 8px;
+      cursor: pointer;
+    }
+    .nabigazioa {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+    }
+    .menua {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+    .menua li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 24px auto;
+      background:#fff; padding: 16px;
+      border-radius: 12px;
+    }
+    .fitxa img {
+      width: 200px;
+      float: left;
+      margin: 0 16px 12px 0;
+      border-radius: 12px;
+      display:block;
+    }
+    .btn {
+      display:inline-block;
+      margin-top: 12px;
+      padding: 8px 12px;
+      background:#222; color:#fff;
+      text-decoration:none; border-radius: 8px;
+    }
+    .fitxa::after { content:""; display:block; clear:both; }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-top: 5px solid #f3d9d9;
+      background-color: #f3d9d9;
+    }
+    footer ul { list-style: none; margin: 0; padding: 0; }
+    .legala, .nabigazioafooter {
+      display:flex; gap:12px; align-items:center; flex-wrap: wrap;
+    }
+    .legala a, .nabigazioafooter a {
+      text-decoration:none; color:#222; font-weight:500;
+    }
+    .kontaktua { list-style: none; margin:0; padding:0; }
+    .kontaktua ul { list-style:none; margin:0; padding:0; display:flex; gap:10px; }
+
+    @media (max-width: 640px){
+      .fitxa img { float:none; width:100%; margin:0 0 12px 0; }
+      footer { flex-direction: column; gap:10px; align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logoa"><img src="img/logozinema2.png" alt="logoa2"></div>
+    <h1>Zinema Usurbil</h1>
+    <nav class="nabigazioa">
+      <div class="iconos">
+        <button class="hanburguesamenua" aria-label="Ireki menua">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <button class="hanburguesamenuaitxi" aria-label="Itxi menua">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <ul class="menua">
+        <li><a href="index2.html">Orrialde nagusia</a></li>
+        <li><a href="kartelera2.html">Kartelera</a></li>
+        <li><a href="balorazioak2.html">Balorazioak</a></li>
+        <li><a href="informazioa2.html">Informazioa</a></li>
+        <li><a href="Saskia2.html">Saskia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="fitxa">
+      <img src="img/sirat2.jpg_large" alt="Sirāt">
+      <h2>Sirāt</h2>
+      <p><em>Drama • 2024</em></p>
+      <p>
+        Norberaren ibilbideari buruzko istorio intimoa: identitatea, fedea eta hartutako erabakien ondorioak
+        zeharkatzen dituen bidaia. Bizitzako zubi meharrean, pasabide bakoitzak galdera berriak pizten ditu.
+      </p>
+      <h3>Fitxa teknikoa</h3>
+      <ul>
+        <li>Zuzendaritza: Joaquín Mazón</li>
+        <li>Antzezleak: Pablo Chiapella, Raquel Guerrero, Nerea Pascual, Álvaro Lafuente.</li>
+        <li>Herrialdea: Espainia</li>
+        <li>Urtea: 2025</li>
+      </ul>
+      <a href="informazioa2.html" class="btn">← Itzuli informaziora</a>
+    </article>
+  </main>
+
+  <footer>
+    <div class="logoa">
+      <a href="index2.html"><img src="img/logozinema2.png" alt="logoa2" width="50" height="50"></a>
+    </div>
+    <div>
+      <ul class="legala">
+        <li><a href="#">Ohar legala</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Creative Commons</a></li>
+      </ul>
+    </div>
+    <ul class="nabigazioafooter">
+      <li><a href="index2.html">Orrialde nagusia</a></li>
+      <li><a href="kartelera2.html">Kartelera</a></li>
+      <li><a href="balorazioak2.html">Balorazioak</a></li>
+      <li><a href="informazioa2.html">Informazioa</a></li>
+      <li><a href="Saskia2.html">Saskia</a></li>
+    </ul>
+    <div class="informazioa">
+      <address class="kontaktua">
+        <ul>
+          <li>
+            <a href="http://instagram.com" target="_blank">
+              <img src="img/instagram2.webp" alt="Instagram2" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ikpgarrastazu25@lhusurbil.eus">
+              <img src="img/mail2.png" alt="Emaila2" width="30" height="30">
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/U4ViMwwziz418LYK9" target="_blank">
+              <img src="img/ubi2.png" alt="Direkzioa2" width="30" height="30">
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
