@@ -3,22 +3,38 @@ package Desktop;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-class Main3 {
-
-  static void pelikula() {
+public class Main3 {
+// klase estatikoak
+/**
+     * Erabiltzaileari sarrerak erosi nahi dituzten galdetzen dio
+     */
+  static void pelikula() {//128.lerroan
     System.out.println("Sarrerak erosi nahi dituzu?(1. BAI/2. EZ)");
   }
-  static void menua() {
+  /**
+     * Zinema aplikazioaren menú nagusia erakusten du
+     */
+  static void menua() {//58.lerroan
     System.out.println("Aukeratu hauetako opzio bat:");
     System.out.println("1. Aste eguna");
-    System.out.println("2. Pelikulen informazioa orokorra");
-    System.out.println("3. Kokapena");
-    System.out.println("4. Irekiera ordutegia");
-    System.out.println("5. Programa bukatu");
+      System.out.println("2. Pelikulen informazioa orokorra");
+      System.out.println("3. Kokapena");
+      System.out.println("4. Irekiera ordutegia");
+      System.out.println("5. Programa bukatu");
+    }
+    /**
+       * Agur mezua itzultzen du
+       * @return Agur mezua
+       */
+  static String agurra(){//61.lerroan
+    return "Eskerrik asko!! Agurr!!";
   }
-static String agurra(){
-  return "Eskerrik asko!! Agurr!!";
-}
+/**
+ *  Mahigaineko aplikazio honetan Scanner erabiltzen dugu
+ * erabiltzaileari egun, areto eta pelikula aukeratzeko eta
+ * sarrerak erosteko aukera emateko.
+ * @param args
+ */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     // hasiera
@@ -55,10 +71,10 @@ static String agurra(){
 
    
     while (zinema !=5){/*5 zenbakia kilkatzen denean programa ixten da */
-      menua();
+      menua();/*menuaren klase estatikoa erabiltzen */
       zinema = sc.nextInt();
       if(zinema == 5){
-          agurra();
+          agurra();/* agurra klase estatikoa erabiltzen */
       }
 
     switch (zinema) {
@@ -69,7 +85,6 @@ static String agurra(){
         if (aukeguna == 8) { /*8 zenbakia klikatzean menura bueltatzea */
     break;
         }
-         //aretoak
         System.out.println("Aukeratu areto bat: ");
          switch (aukeguna) {
       case 1:
@@ -125,7 +140,7 @@ static String agurra(){
     if(aukpelikula == 6){/*6 zenbakia klikatzean menura bueltatzea */
       break;
    
-    }
+    }/*pelikulen klase estatikoa eerabiltzen */
     switch (aukpelikula) {
       case 1:
         pelikula();
