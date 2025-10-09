@@ -16,7 +16,9 @@ class Main3 {
     System.out.println("4. Irekiera ordutegia");
     System.out.println("5. Programa bukatu");
   }
-
+static String agurra(){
+  return "Eskerrik asko!! Agurr!!";
+}
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     // hasiera
@@ -41,7 +43,7 @@ class Main3 {
     pelikulak.add("4. Sonic 3");
     pelikulak.add("5. Sirat");
     pelikulak.add("6. Atzera");
-    
+   
     // aretoak
     ArrayList<String> aretoa = new ArrayList<String>();
     aretoa.add("1. Umeen aretoa");
@@ -51,16 +53,23 @@ class Main3 {
     aretoa.add("5. Komedia aretoa");
     aretoa.add("6. Atzera");
 
-    // lehen menua
-    while (zinema !=5) {
+   
+    while (zinema !=5){/*5 zenbakia kilkatzen denean programa ixten da */
       menua();
       zinema = sc.nextInt();
+      if(zinema == 5){
+          agurra();
+      }
 
     switch (zinema) {
       case 1:
+      //egunk
         System.out.println("Aukeratu egun bat: "+egunak);
         int aukeguna=sc.nextInt();
-         
+        if (aukeguna == 8) { /*8 zenbakia klikatzean menura bueltatzea */
+    break;
+        }
+         //aretoak
         System.out.println("Aukeratu areto bat: ");
          switch (aukeguna) {
       case 1:
@@ -84,10 +93,14 @@ class Main3 {
       case 7:
         System.out.println(aretoa);
         break;
-      case 8:
-        break;
     }
+
+    System.out.println("Areto kopurua: " + (aretoa.size() - 1));
+    //pelikulak
     int aukareto = sc.nextInt();
+    if(aukareto == 6){/*6 zenbakia klikatzean menura bueltatzea */
+      break;
+     }
      System.out.println("Aukeratu pelikula bat: ");
     switch (aukareto) {
       case 1:
@@ -105,10 +118,14 @@ class Main3 {
       case 5:
         System.out.println(pelikulak);
         break;
-      case 6:
-        break;
     }
+
+    //sarrerak
     int aukpelikula = sc.nextInt();
+    if(aukpelikula == 6){/*6 zenbakia klikatzean menura bueltatzea */
+      break;
+   
+    }
     switch (aukpelikula) {
       case 1:
         pelikula();
@@ -126,6 +143,8 @@ class Main3 {
         pelikula();
         break;
     }
+
+    //sarrerak erosi
     int sarrerak = sc.nextInt();
     switch (sarrerak) {
       case 1:
@@ -154,10 +173,14 @@ class Main3 {
       case 5:
         break;
     }
-      
-    }
+  }
+  
+  break;
+   
+     
       case 2:
         System.out.println("Pelikula hauek daude: " + pelikulak);
+        System.out.println("Pelikula kopurua: " + (pelikulak.size() -1));
         break;
       case 3:
         System.out.println("De Etarte Bidea, 20160 Zubieta, Gipuzkoa");
@@ -168,10 +191,11 @@ class Main3 {
         break;
       case 5:
         break;
+   
     }
     }
-    
-      
+   
+     
     sc.close();
   }
 }
